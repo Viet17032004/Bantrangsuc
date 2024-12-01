@@ -79,6 +79,7 @@ foreach($carts as $key => $item){
 }
 DB::commit();
 
+
 //Khi thêm thành công sẽ làm công việc bên dưới này
 // Trừ đi số lượng của sản phẩm
 //Gửi mail khi đặt hàng thành công
@@ -116,6 +117,9 @@ return redirect()->route('donhangs.index')->with('success','Đơn hàng đã t�
     public function edit(string $id)
     {
         //
+        $donHang = DonHang::query()->final($id);
+        $trangThaiDonHang = DonHang::TRANG_THAI_DON_HANG;
+        
     }
 
     /**

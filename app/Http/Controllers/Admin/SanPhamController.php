@@ -68,7 +68,7 @@ class SanPhamController extends Controller
         }else{
             $params['hinh_anh'] = null;
         }
-        //Thêm sản phẩm
+        //Thêm sản phẩm 
 
         $sanPham = SanPham::query()->create($params);
     //Lấy id sản phẩm vừa thêm để thêm được album 

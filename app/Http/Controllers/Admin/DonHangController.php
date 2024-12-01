@@ -65,6 +65,8 @@ class DonHangController extends Controller
     {
         $donHang = DonHang::query()->findOrFail($id);
         $currentTrangThai = $donHang->trang_thai_don_hang;
+        $ids = TenBang::where('status', 1)->pluck('id');
+
 
         $newTrangThai = $request->input('trang_thai_don_hang');
         $trangThai = array_keys(DonHang::TRANG_THAI_DON_HANG);

@@ -184,7 +184,7 @@
                                             <input type="file" id="hinh_anh" name="hinh_anh" class="form-control"
                                                 onchange="showImage(event)">
                                             <img id="img_danh_muc" src="{{ Storage::url($sanPham->hinh_anh) }}" alt="Hình Ảnh Sản Phẩm"
-                                                style="width: 150px">
+                                                style="width: 150px;display:none">
                                         </div>
                                         <div class="mb-3">
                                             <label for="hinh_anh" class="form-label">Album hình ảnh</label>

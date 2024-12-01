@@ -77,8 +77,9 @@
                                                     onchange="confirmSubmit(this)"data-default-value="{{$item->trang_thai_don_Hang}}">
                                                     
                                                         @foreach ($trangThaiDonHang as $key => $value)
-                                                            <option value="{{ $key }}"{{$key == $item->trang_thai_don_hang ? 'selected' : ''}}
-                                                                {{$key == $type_huy_don_hang ? 'disabled' : ''}}
+                                                        <option value="{{ $key }}" {{$key == $item->trang_thai_don_hang ? 'selected' : ''}}>
+                                                            {{-- <option value="{{ $key }}" {{$key == $item->trang_thai_don_hang ? 'selected' : ''}} {{$key == $type_huy_don_hang ? 'disabled' : ''}}> --}}
+
                                                                 
                                                                 >
                                                                 {{$value}}</option>

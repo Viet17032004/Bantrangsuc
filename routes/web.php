@@ -28,9 +28,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('admins.taikhoans.detail');
-// });
+Route::get('/test', function () {
+    return view('admins.sanphams.test');
+});
 // Route::get('/home', function () {
 //     return view('admins.danhmucs.index');
 // });
